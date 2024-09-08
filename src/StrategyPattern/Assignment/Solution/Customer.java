@@ -1,4 +1,4 @@
-package edu.mum.cs.cs525.labs.skeleton;
+package StrategyPattern.Assignment.Solution;
 
 public class Customer {
 	private String name;

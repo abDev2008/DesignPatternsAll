@@ -1,4 +1,4 @@
-package edu.mum.cs.cs525.labs.skeleton;
+package StrategyPattern.Assignment.Solution;
 
 import java.util.Collection;
 

@@ -1,4 +1,6 @@
-package edu.mum.cs.cs525.labs.skeleton;
+package StrategyPattern.Assignment.Solution;
+
+import StrategyPattern.Assignment.Solution.Strategy.InterestCalculationStrategy;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -10,6 +12,9 @@ public class Account {
 	private String accountNumber;
 
 	private List<AccountEntry> entryList = new ArrayList<AccountEntry>();
+
+	// added ?????????????????????????????????????
+	private InterestCalculationStrategy interestCalculationStrategy;
 
 	public Account(String accountNumber) {
 		this.accountNumber = accountNumber;
@@ -66,6 +71,16 @@ public class Account {
 
 	public Collection<AccountEntry> getEntryList() {
 		return entryList;
+	}
+
+	//????????????????????????/ added
+	public void addInterest(){
+		if(interestCalculationStrategy != null){
+			double interest = interestCalculationStrategy.calculateInterest(getBalance());
+			deposit(interest);
+		}else{
+			System.out.println("Interest calculation strategy not set!");
+		}
 	}
 
 }
