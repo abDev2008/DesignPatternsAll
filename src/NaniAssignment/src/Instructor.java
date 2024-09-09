@@ -15,6 +15,7 @@ public class Instructor {
         this.fullName = fullName;
     }
 
+
     public static  List<Instructor> instructors=new ArrayList<>();
 
     public Instructor(String lastName,Course courseToTeach) {
