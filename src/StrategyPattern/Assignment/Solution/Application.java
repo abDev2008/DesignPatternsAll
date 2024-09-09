@@ -5,12 +5,18 @@ public class Application {
 		AccountService accountService = new AccountServiceImpl();
 
 		// create 2 accounts;
-		accountService.createAccount("1263862", "Frank Brown");
-		accountService.createAccount("4253892", "John Doe");
+		accountService.createAccount("1263862", "Frank Brown","Checking");
+		accountService.createAccount("4253892", "John Doe","Saving");
 		// use account 1;
 		accountService.deposit("1263862", 240);
 		accountService.deposit("1263862", 529);
 		accountService.withdraw("1263862", 230);
+
+		Account account1 = accountService.getAccount("1263862");
+		account1.addInterest();
+		Account account2 = accountService.getAccount("4253892");
+		account2.addInterest();
+
 		// use account 2;
 		accountService.deposit("4253892", 12450);
 		accountService.transferFunds("4253892", "1263862", 100, "payment of invoice 10232");

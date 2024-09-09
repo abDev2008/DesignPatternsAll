@@ -36,6 +36,7 @@ public class Account {
 		return balance;
 	}
 
+
 	public void deposit(double amount) {
 		AccountEntry entry = new AccountEntry(amount, "deposit", "", "");
 		entryList.add(entry);
@@ -81,6 +82,9 @@ public class Account {
 		}else{
 			System.out.println("Interest calculation strategy not set!");
 		}
+	}
+	public void setInterestCalculationStrategy(InterestCalculationStrategy interestCalculationStrategy) {
+		this.interestCalculationStrategy = interestCalculationStrategy;
 	}
 
 }

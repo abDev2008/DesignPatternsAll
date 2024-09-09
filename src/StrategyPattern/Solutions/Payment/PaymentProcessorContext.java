@@ -1,8 +1,8 @@
 package StrategyPattern.Solutions.Payment;
 
-public class PaymentProcessorConcrete {
+public class PaymentProcessorContext {
     private PaymentStrategy paymentStrategy;
-    public PaymentProcessorConcrete(PaymentStrategy paymentStrategy) {
+    public PaymentProcessorContext(PaymentStrategy paymentStrategy) {
         this.paymentStrategy = paymentStrategy;
     }
 

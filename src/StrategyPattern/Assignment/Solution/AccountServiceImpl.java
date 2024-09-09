@@ -1,5 +1,8 @@
 package StrategyPattern.Assignment.Solution;
 
+import StrategyPattern.Assignment.Solution.Strategy.CheckingAccountStrategy;
+import StrategyPattern.Assignment.Solution.Strategy.SavingAccountInterestStrategy;
+
 import java.util.Collection;
 
 public class AccountServiceImpl implements AccountService {
@@ -9,11 +12,18 @@ public class AccountServiceImpl implements AccountService {
 		accountDAO = new AccountDAOImpl();
 	}
 
-	public Account createAccount(String accountNumber, String customerName) {
+	public Account createAccount(String accountNumber, String customerName,String accountType) {
 		Account account = new Account(accountNumber);
 		Customer customer = new Customer(customerName);
 		account.setCustomer(customer);
-		
+
+		if(accountType.equals("Saving")){
+			account.setInterestCalculationStrategy(new SavingAccountInterestStrategy());
+		}
+		else if (accountType.equals("Checking")){
+			account.setInterestCalculationStrategy(new CheckingAccountStrategy());
+		}
+
 		accountDAO.saveAccount(account);
 		
 		return account;
