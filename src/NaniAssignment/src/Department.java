@@ -23,6 +23,7 @@ public Department(String departmentName){
             totalCreditHours+=creditHours;
             assignAnotherInstructor(course,course.getInstructorOfThisCourse().get(0));
         }
+
         else {
             System.out.println("course already assigned");
         }

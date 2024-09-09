@@ -16,7 +16,6 @@ public enum AccedemicStanding {
         } else if (creditHours <= JUNIOR.creditHours) {
             return JUNIOR;
         } else return SENIOR;
-
     }
 
 }

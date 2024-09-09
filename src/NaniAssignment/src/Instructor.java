@@ -27,6 +27,7 @@ public class Instructor {
         instructors.add(this);
     }
 
+
     public void addTeachingCourses(Course course) {
         teachingCourses.add(course);
         course.assignInstructor(this);
