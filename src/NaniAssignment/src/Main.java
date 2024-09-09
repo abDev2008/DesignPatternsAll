@@ -20,6 +20,7 @@ public class Main {
  var student4=new Student("amete",software);
  var student5=new Student("kiros",software);
 
+
  software.assignCourse(mathematics,99);
 software.assignCourse(computerScience,8);
 //software.assignCourse(hardware,4);
