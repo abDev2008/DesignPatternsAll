@@ -1,4 +1,4 @@
-package CommandPattern.Problem.TextEditor;
+package CommandPattern.Example.EX1.Problem.TextEditor;
 
 public class TextEditor {
     public void writeText(String text){
