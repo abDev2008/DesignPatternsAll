@@ -13,7 +13,6 @@ public class DinnerHouseMenuIterator implements Iterator{
         if(size<DinnerHouseMenu.getArraySize()){
             return true;
         }
-
         return false;
     }
 
