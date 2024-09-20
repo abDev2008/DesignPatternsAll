@@ -1,4 +1,4 @@
-package ProxyPattern;
+package StatePattern;
 
 public class GumBallMachineContext {
     private State hasQuarter;

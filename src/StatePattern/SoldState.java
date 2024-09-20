@@ -1,4 +1,4 @@
-package ProxyPattern;
+package StatePattern;
 
 public class SoldState implements State{
     GumBallMachineContext gumBallMachineContext;

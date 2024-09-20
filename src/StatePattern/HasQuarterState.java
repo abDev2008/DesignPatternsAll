@@ -1,6 +1,4 @@
-package ProxyPattern;
-
-import java.util.Random;
+package StatePattern;
 
 public class HasQuarterState implements State{
     GumBallMachineContext gumBallMachineContext;

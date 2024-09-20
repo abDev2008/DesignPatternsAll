@@ -1,4 +1,4 @@
-package ProxyPattern;
+package StatePattern;
 
 public interface State {
     void insertQuarter();
