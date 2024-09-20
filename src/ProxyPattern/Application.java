@@ -2,8 +2,8 @@ package ProxyPattern;
 
 public class Application {
     public static void main(String[] args) {
-        GumBallMachineContext gum = new GumBallMachineContext(0);
-
+        GumBallMachineContext gum = new GumBallMachineContext(2);
+        State res = gum.getCurrentState();
 
     }
 }
