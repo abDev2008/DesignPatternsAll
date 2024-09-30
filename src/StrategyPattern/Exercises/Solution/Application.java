@@ -9,5 +9,6 @@ public class Application {
         CompressorStrategy compressor1 = new Compressor1();
         StoreContext store = new StoreContext(compressor1,filter1);
         store.store("something");
+
     }
 }
