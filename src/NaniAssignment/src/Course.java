@@ -10,7 +10,6 @@ record CreditHours( Department department,Course course,int value){
 }
 
 public class Course {
-
     private String courseName;
     private int creditHours;
     private String courseCode;
@@ -19,10 +18,8 @@ public class Course {
      List<Student> enrolledStudents;
      List<Course> preRequestCourses;
     private List< Department> onDepartments;
-
     private static int counter = 1000;
     public static final List<Course> courses=new ArrayList<>();
-
     public Course(String courseName) {
         this.courseName = courseName;
         this.courseCode = courseCodeStarter +counter++;
@@ -30,7 +27,6 @@ public class Course {
         enrolledStudents=new LinkedList<>();
         onDepartments=new ArrayList<>();
         instructorsOfThisCourse=new ArrayList<>();
-
         courses.add(this);
     }
 

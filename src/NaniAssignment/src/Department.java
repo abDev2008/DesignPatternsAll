@@ -14,7 +14,6 @@ public Department(String departmentName){
     coursesOffered=new ArrayList<>();
     instructors=new ArrayList<>();
 }
-
     public void assignCourse(Course course,int creditHours) {
         if (!coursesOffered.contains(course)) {
             course.assignToDepartment(this);

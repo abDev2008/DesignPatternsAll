@@ -7,7 +7,6 @@ public enum AccedemicStanding {
     AccedemicStanding(int creditHours) {
         this.creditHours = creditHours;
     }
-
     public AccedemicStanding getAccademicStanding(int creditHours) {
         if (creditHours <= FRESHMAN.creditHours)
             return FRESHMAN;
