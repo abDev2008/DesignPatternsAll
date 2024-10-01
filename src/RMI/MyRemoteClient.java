@@ -11,7 +11,8 @@ public class MyRemoteClient {
             MyRemote service = (MyRemote) Naming.lookup("rmi://127.0.0/RemoteHello");
             String s = service.sayHello();
             System.out.println(s);
-        }catch (Exception e){
+        }
+        catch (Exception e){
             e.printStackTrace();
         }
     }
